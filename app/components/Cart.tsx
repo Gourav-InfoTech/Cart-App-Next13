@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 import {
+  clearCart,
   quantityDecrease,
   quantityIncrease,
   removeFromCart,
@@ -104,6 +105,7 @@ const Cart = () => {
         );
       })}
 
+      <button className="checkout flex items-center gap-3 " style={{ backgroundColor: "#EF5350" }} onClick={() => dispatch(clearCart(null))}> <IoBagCheckOutline />CLear Cart</button>
       <button className="checkout flex items-center gap-3"> <IoBagCheckOutline />Checkout</button>
     </CartDiv>
   );
@@ -222,10 +224,7 @@ const CartDiv = styled.div<CartDivD>`
         font-size: 15px;
         font-weight: 600;
       }
-
-      
     }
-
   }
 `;
 
