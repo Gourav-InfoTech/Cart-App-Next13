@@ -33,9 +33,9 @@ const Cart = () => {
   const opacity = showCart ? 1 : 0;
   const right = showCart ? "0" : "-1000px";
 
-  useEffect(()=>{
+  useEffect(() => {
     document.body.style.overflow = showCart ? "hidden" : "auto";
-  },[showCart])
+  }, [showCart])
 
 
   // delete, incerase, decrese
