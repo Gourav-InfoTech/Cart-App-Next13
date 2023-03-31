@@ -1,7 +1,7 @@
-"use client"
-import store from '@/store'
-import React from 'react'
-import { Provider } from 'react-redux'
+"use client";
+import store from '@/store';
+import React from 'react';
+import { Provider } from 'react-redux';
 
 const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
     return (
@@ -13,4 +13,4 @@ const GlobalProvider = ({ children }: { children: React.ReactNode }) => {
     )
 }
 
-export default GlobalProvider
+export default GlobalProvider;

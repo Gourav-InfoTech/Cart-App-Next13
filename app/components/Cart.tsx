@@ -30,7 +30,6 @@ const Cart = () => {
   const { cart, showCart } = useSelector((state: any) => state.cart);
   const dispatch = useDispatch();
 
-
   const opacity = showCart ? 1 : 0;
   const right = showCart ? "0" : "-1000px";
 
